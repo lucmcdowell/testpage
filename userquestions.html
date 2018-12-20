@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	  <meta name="keywords" content="Meetup, Questioner">
+      <meta name="description" content="Meetup Questioner">
+    <title>Meetup Interest</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+<body onLoad="getdatetime();">
+
+    <header>
+      <div class="maincontainer">
+        <div id="logo">
+          <h1>Questioner</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+			<li><a href="createmeetup.html">Create Meetup</a></li>
+			<li><a href="deletemeetup.html">Delete Meetup</a></li>
+			<li><a href="userquestions.html">User Questions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	<div id="contdiv">
+<div id="helpfultext">is this a good question?</div> 
+  <div id="incrementup" onclick="voteup()"><img src="../Questioner_1/images/upvote.png" width="24" height="24" alt="upvote" /></div>
+  <div id="incrementdown" onclick="votedown()"><img src="../Questioner_1/images/downvote.png" width="24" height="24" alt="downvote" /></div>
+  <div id="count">0</div><br>
+  <input type="button" id="commentbutton" onclick="Commentload()" value="Comment" />
+</div>
+<div id="commentdiv"class="commentbox">
+            <div class="commentboxalert">
+			 <div id="closeit" onclick="close_commentwindow()">X</div>
+
+                <form action="">
+                    <textarea id="commentwords"  rows="auto" cols="auto" ></textarea><br>
+                  <input type="button" id="commentsubmitbutton"  value="Submit Comment" /> 
+                </form>
+             
+            </div>
+        </div>
+<div id="userwelcome">
+<p id="screenname">Ouma<p/>
+</div>
+<div id="datedisplaydiv"></div>
+<section id="mini_containers">
+      <div class="mini_container">
+	  <table class="eventstable">
+		<tr>
+		<td>Saturday January 12, 2019</td>
+		</tr>
+		<tr>
+    <td><h1>Andela Learning Community Meetup 2.0</h1></td>
+  </tr>
+  <tr>
+    <td>The scheduled meetup is about meeting and exchanging learning experiences. Attendants must be there on time. no late arrivals will be accepted.</td>
+  </tr>
+</table>
+</div>
+<div class="mini_container">
+<form>
+<textarea id="questionwords"  rows="auto" cols="auto" placeholder="Have any questions? Type here..."></textarea>
+<input type="button" class="loginbutton" onclick="getquestionwords()" value="Ask a question" /> 
+<p id="para"></p>
+</form>
+<table id="questions_table"  class="questionstable">
+</table><br>
+
+
+</div>
+
+</section>
+ <div>
+
+</div>
+ 
+<script type="text/javascript">
+	
+		
+
+</script>
+
+ 
+<div>
+<p id="para"></p>
+ </div>
+</div>
+</div>
+ 
+</div>
+
+<p></p>
+    <p></p>	
+    </div>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
